@@ -35,3 +35,5 @@ const transform = (total, currentValue, currentIndex, array) => {
 
 const res3 = arr3.reduce(transform, initialValue);
 console.log(res3);
+
+// 牢记，initialValue不只能是0，可以是对象，可以是任何类型
