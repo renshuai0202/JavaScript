@@ -36,4 +36,12 @@ const transform = (total, currentValue, currentIndex, array) => {
 const res3 = arr3.reduce(transform, initialValue);
 console.log(res3);
 
+// 如果不写初试数值
+const arr4 = [2, 5, 10];
+const res4 = arr4.reduce((total, currentValue, currentIndex, array) => {
+  console.log('value', total, currentValue);
+  return total += currentValue;
+});
+console.log('res4', res4);
+
 // 牢记，initialValue不只能是0，可以是对象，可以是任何类型
